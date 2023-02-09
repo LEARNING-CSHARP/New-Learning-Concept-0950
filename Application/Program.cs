@@ -23,17 +23,18 @@ internal static class Program
 {
 	private static void Main()
 	{
-		var person = new Person
-		{
-			FullName =
-				"Ali Reza Alavi",
+		var person =
+			new Person
+			{
+				FullName =
+					"Ali Reza Alavi",
 
-			Gender =
-				Enums.Gender.Male,
+				Gender =
+					Enums.Gender.Male,
 
-			Marriage =
-				Enums.Marriage.Married,
-		};
+				Marriage =
+					Enums.Marriage.Married,
+			};
 
 		if (person.Gender == Enums.Gender.Female)
 		{
@@ -62,11 +63,12 @@ internal static class Program
 			}
 		}
 
-		var file = new File
-		{
-			Attributes =
-				Enums.FileAttributes.System,
-		};
+		var file =
+			new File
+			{
+				Attributes =
+					Enums.FileAttributes.System,
+			};
 
 		file.Attributes =
 			Enums.FileAttributes.Hidden
