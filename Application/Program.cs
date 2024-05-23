@@ -17,6 +17,9 @@
 //	}
 //}
 
+using System;
+using Application.Enums;
+
 namespace Application;
 
 internal static class Program
@@ -26,38 +29,38 @@ internal static class Program
 		var person =
 			new Person
 			{
-				FullName =
-					"Ali Reza Alavi",
-
 				Gender =
-					Enums.Gender.Male,
+					Gender.Male,
 
 				Marriage =
-					Enums.Marriage.Married,
+					Marriage.Married,
+
+				FullName =
+					"Ali Reza Alavi",
 			};
 
-		if (person.Gender == Enums.Gender.Female)
+		if (person.Gender == Gender.Female)
 		{
-			System.Console.WriteLine
+			Console.WriteLine
 				(value: "You are female!");
 		}
 
-		System.Console.WriteLine(value: person.Gender);
-		System.Console.WriteLine(value: (byte)person.Gender);
+		Console.WriteLine(value: person.Gender);
+		Console.WriteLine(value: (byte)person.Gender);
 
 		switch (person.Marriage)
 		{
-			case Enums.Marriage.Single:
+			case Marriage.Single:
 			{
 				break;
 			}
 
-			case Enums.Marriage.Married:
+			case Marriage.Married:
 			{
 				break;
 			}
 
-			case Enums.Marriage.Divorced:
+			case Marriage.Divorced:
 			{
 				break;
 			}
@@ -67,27 +70,27 @@ internal static class Program
 			new File
 			{
 				Attributes =
-					Enums.FileAttributes.System,
+					FileAttributes.System,
 			};
 
 		file.Attributes =
-			Enums.FileAttributes.Hidden
+			FileAttributes.Hidden
 			|
-			Enums.FileAttributes.System
+			FileAttributes.System
 			|
-			Enums.FileAttributes.Archive;
+			FileAttributes.Archive;
 
-		if (file.Attributes == Enums.FileAttributes.System)
+		if (file.Attributes == FileAttributes.System)
 		{
 		}
 
-		if ((file.Attributes & Enums.FileAttributes.System) == Enums.FileAttributes.System)
+		if ((file.Attributes & FileAttributes.System) == FileAttributes.System)
 		{
 		}
 
 		if ((file.Attributes &
-			(Enums.FileAttributes.Hidden | Enums.FileAttributes.System)) ==
-			(Enums.FileAttributes.Hidden | Enums.FileAttributes.System))
+			(FileAttributes.Hidden | FileAttributes.System)) ==
+			(FileAttributes.Hidden | FileAttributes.System))
 		{
 		}
 	}

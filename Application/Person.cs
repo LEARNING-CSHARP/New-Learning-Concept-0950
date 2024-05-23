@@ -1,4 +1,6 @@
-﻿namespace Application;
+﻿using Application.Enums;
+
+namespace Application;
 
 /// <summary>
 /// Person
@@ -23,19 +25,19 @@ public class Person
 	public string FullName { get; set; }
 	#endregion /public string FullName { get; set; }
 
-	#region public Enums.Gender Gender { get; set; }
+	#region public Gender Gender { get; set; }
 	/// <summary>
 	/// Gender
 	/// </summary>
-	public Enums.Gender Gender { get; set; }
-	#endregion /public Enums.Gender Gender { get; set; }
+	public Gender Gender { get; set; }
+	#endregion /public Gender Gender { get; set; }
 
-	#region public Enums.Marriage Marriage { get; set; }
+	#region public Marriage Marriage { get; set; }
 	/// <summary>
 	/// Marriage
 	/// </summary>
-	public Enums.Marriage Marriage { get; set; }
-	#endregion /public Enums.Marriage Marriage { get; set; }
+	public Marriage Marriage { get; set; }
+	#endregion /public Marriage Marriage { get; set; }
 
 	#endregion /Properties
 }

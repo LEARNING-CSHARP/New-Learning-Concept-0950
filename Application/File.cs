@@ -1,4 +1,6 @@
-﻿namespace Application;
+﻿using Application.Enums;
+
+namespace Application;
 
 /// <summary>
 /// File
@@ -30,12 +32,12 @@ public class File
 	public string Name { get; set; }
 	#endregion /public string Name { get; set; }
 
-	#region public Enums.FileAttributes Attributes { get; set; }
+	#region public FileAttributes Attributes { get; set; }
 	/// <summary>
 	/// File Attributes
 	/// </summary>
-	public Enums.FileAttributes Attributes { get; set; }
-	#endregion /public Enums.FileAttributes Attributes { get; set; }
+	public FileAttributes Attributes { get; set; }
+	#endregion /public FileAttributes Attributes { get; set; }
 
 	#endregion /Properties
 }
